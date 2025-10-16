@@ -1,24 +1,24 @@
 /**
- *  Odd Occurrence Finder
- * 
- * Problem:
- *  Given an array of integers where every element occurs in pairs except one,
- *  find the element that does not have a pair.
- * 
- * Example:
- *  Input:  [2, 3, 5, 3, 2, 5, 8]
- *  Output: 8
- * 
- * Approach Summary:
- *  I went through three stages while solving this problem:
- *    1️⃣ First Attempt — Using a for loop and splice()
- *    2️⃣ Second Attempt — Using a while loop for better control
- *    3️⃣ Final Efficient Solution — Using sorted array with step-by-two comparison
- * 
- * Notes:
- *  The first two worked but weren’t efficient or stable because splice() modifies
- *  the array while iterating, which shifts indexes and can cause skipped elements.
- *  The final method is simple, readable, and avoids modifying the array mid-loop.
+  Odd Occurrence Finder
+  
+  Problem:
+   Given an array of integers where every element occurs in pairs except one,
+   find the element that does not have a pair.
+  
+  Example:
+   Input:  [2, 3, 5, 3, 2, 5, 8]
+   Output: 8
+  
+  Approach Summary:
+   I went through three stages while solving this problem:
+     1️⃣ First Attempt — Using a for loop and splice()
+     2️⃣ Second Attempt — Using a while loop for better control
+     3️⃣ Final Efficient Solution — Using sorted array with step-by-two comparison
+  
+  Notes:
+   The first two worked but weren’t efficient or stable because splice() modifies
+   the array while iterating, which shifts indexes and can cause skipped elements.
+   The final method is simple, readable, and avoids modifying the array mid-loop.
  */
 
 // ===============================
@@ -106,11 +106,11 @@ for (let i = 0; i < myArray.length; i += 2) {
 }
 
 /**
- *  Example Run:
- *  Input:  [2, 3, 5, 3, 2, 5, 8]
- *  Sorted: [2, 2, 3, 3, 5, 5, 8]
- *  Output: 8 is the odd one out
- * 
- *  Time Complexity: O(n log n) (because of sorting)
- *  Space Complexity: O(1)
+   Example Run:
+   Input:  [2, 3, 5, 3, 2, 5, 8]
+   Sorted: [2, 2, 3, 3, 5, 5, 8]
+   Output: 8 is the odd one out
+  
+   Time Complexity: O(n log n) (because of sorting)
+   Space Complexity: O(1)
  */
