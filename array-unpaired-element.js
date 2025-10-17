@@ -36,7 +36,7 @@
 // ⚠️ Issue: The splice() inside the for loop causes index shifting
 // which results in skipping elements unexpectedly.
 
-/*
+
 let numbers = [2,3,5,3,2,5,8];
 console.log(numbers)
 let sorted = numbers.sort((a,b) => a-b)
@@ -50,7 +50,7 @@ for (i=0; i<numbers.length;i++){
         console.log(numbers[i] + " is the odd one")
     }
 }
-*/
+
 
 
 // ===================================
@@ -66,7 +66,7 @@ for (i=0; i<numbers.length;i++){
 // ⚠️ Issue: Still uses splice() which modifies the array.
 // Works, but inefficient for large data.
 
-/*
+
 let numbers = [2,3,5,3,2,5,8];
 console.log(numbers)
 let sorted = numbers.sort((a,b) => a-b)
@@ -80,7 +80,7 @@ while (i < numbers.length) {
         break;
     }
 }
-*/
+
 
 
 // ========================================
